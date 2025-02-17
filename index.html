@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITCAGS LTD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/bitcags logo.png" alt="Company Logo" id="company-logo">
+        <h1>BITCAGS LTD</h1>
+    </header>
+    
+    
+    <div class="services-container">
+        <div class="service-card">
+            <img src="images/black and white.jfif" alt="Service 1" class="animated">
+            <h2>Printing Black and White</h2>
+            <p>Price: 
+                <select class="price-option">
+                    <option value="50">₦50</option>
+                    <option value="100">₦100</option>
+                </select>
+            </p>
+            <label>Quantity: <input type="number" value="1" class="quantity" min="1"></label>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="service-card">
+            <img src="images/color.png" alt="Service 2" class="animated">
+            <h2>Printing Color</h2>
+            <p>Price: 
+                <select class="price-option">
+                    <option value="100">₦100</option>
+                    <option value="150">₦150</option>
+                    <option value="200">₦200</option>
+                </select>
+            </p>
+            <label>Quantity: <input type="number" value="1" class="quantity" min="1"></label>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <img src="images/design.jfif" alt="Service 2" class="animated">
+        <h2>Designing</h2>
+        <p>Price: 
+            <select class="price-option">
+                <option value="500">₦500</option>
+                <option value="1000">₦1000</option>
+                <option value="2000">₦2000</option>
+            </select>
+        </p>
+        <label>Quantity: <input type="number" value="1" class="quantity" min="1"></label>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="service-card">
+        <img src="images/lamination.jfif" alt="Service 2" class="animated">
+        <h2>Printing Color</h2>
+        <p>Price: 
+            <select class="price-option">
+                <option value="100">₦100</option>
+                <option value="200">₦200</option>
+               
+            </select>
+        </p>
+        <label>Quantity: <input type="number" value="1" class="quantity" min="1"></label>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<div class="service-card">
+    <img src="images/passport.jfif" alt="Service 2" class="animated">
+    <h2>Printing Color</h2>
+    <p>Price: 
+        <select class="price-option">
+            <option value="600">₦600-6 Pcs</option>
+            <option value="800">₦800-8 Pcs</option>
+            <option value="1600">₦1600-16 Pcs</option>
+        </select>
+    </p>
+    <label>Quantity: <input type="number" value="1" class="quantity" min="1"></label>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="service-card">
+    <img src="images/windows.jfif" alt="Service 2" class="animated">
+    <h2>Printing Color</h2>
+    <p>Price: 
+        <select class="price-option">
+            <option value="1000">₦1000- without Softwares</option>
+            <option value="2000">₦2000- Complete Setup</option>
+        </select>
+    </p>
+    <label>Quantity: <input type="number" value="1" class="quantity" min="1"></label>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+<div class="service-card">
+    <img src="images/premium.jfif" alt="Service 2" class="animated">
+    <h2>Printing Color</h2>
+    <p>Price: 
+        <select class="price-option">
+            <option value="2000">₦2000</option>
+        </select>
+    </p>
+    <label>Quantity: <input type="number" value="1" class="quantity" min="1"></label>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+</div>
+
+</div>
+
+    <h2>Total Amount: <span id="totalAmount">₦0</span></h2>
+    <button onclick="generateReceipt()">Print Receipt</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
