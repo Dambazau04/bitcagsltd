@@ -22,20 +22,56 @@ document.addEventListener("DOMContentLoaded", function () {
         let receiptContent = `
             <html>
                 <head>
-                    <title>Receipt</title>
+                    <title>Bitcags Receipt</title>
                     <style>
                         body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
                         h2 { color: #333; }
+                        h3 { font-size: small; }
                         table { width: 100%; border-collapse: collapse; margin-top: 20px; }
                         th, td { border: 1px solid black; padding: 10px; }
                         th { background: #f4f4f4; }
                         .bold { font-weight: bold; }
+                        img{ display: block; margin: 0 auto; max-width: 150px;}
+                        p { margin: 2 auto; font-size: small;  }
+                        body { font-family: Arial, sans-serif; text-align: center; }
+                .receipt-header img { width: 100px; }
+                .receipt-watermark {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0.1;
+                    font-size: 50px;
+                    font-weight: bold;
+                }
+                    /* Footer */
+.footer {
+
+    background-color: #333;
+        color: rgb(255, 85, 85);
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .footer .social-media a {
+        color: rgb(44, 252, 2);
+        text-decoration: none;
+        margin: 0 10px;
+    }s
+    
+    .footer .social-media a:hover {
+        text-decoration: underline;
+    }
                     </style>
                 </head>
                 <body>
+                <img src="images/bitcags logo.png" alt="Company Logo" id="company-logo">
                     <h2>BITCAGS LTD RECEIPT</h2>
                     <h3>Address: No. 17A, Janbulo Second Gate Opposite Bukar Makoda Block</h3>
                     <p>Receipt Generated: ${new Date().toLocaleString()}</p>
+                    <div class="receipt-header">
+            </div>
+            <div class="receipt-watermark">BITCAGS LTD</div>
                     <table>
                         <tr>
                             <th>Service Name</th>
@@ -63,6 +99,19 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p>+234-9075-9777-44, +234-8107-9076-47</p>
                     <p>bitcagsltd@gmail.com | www.bitcagsltd.com.ng</p>
                     <button onclick="window.print()">Print Receipt</button>
+                    <!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 BITCAGS LTD. All Rights Reserved.</p>
+        <div class="social-media">
+
+            <a href="https://www.facebook.com/abu.abdurrahman.it.consult.and.general.services">Facebook</a> | 
+            <a href="https://www.instagram.com/aitcags_ltd?igsh=YzljYTk10Dg3Zg==">Instagram</a> |
+            <a href="https://www.instagram.com/aitcags_ltd?igsh=YzljYTk10Dg3Zg==">Twitter</a>
+        </div>
+    </div>
+</footer>
+
                 </body>
             </html>
         `;
@@ -96,8 +145,6 @@ function printReceipt() {
         <body>
             <div class="receipt-header">
                 <img src="logo.png" alt="Company Logo">
-                <h2>A.A Global Investment Ltd</h2>
-                <p class="company-address">123 Business Street, City, Country</p>
             </div>
             <div class="receipt-watermark">A.A GLOBAL</div>
             <h3>Receipt</h3>
